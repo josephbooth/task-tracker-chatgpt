@@ -4,6 +4,8 @@ A lightweight, file-based task tracker designed for use by an individual with Ch
 
 The repository uses a Markdown file as its authoritative task and project ledger. No database or external task-management service is required.
 
+For the thinking behind this deliberately low-fidelity approach, see [Task Management Without an Application](the_idea.md).
+
 ## 1. Getting Started
 
 1. Fork this repository or create your own copy.
