@@ -18,15 +18,20 @@ A useful starting prompt is:
 
 The AI client must retrieve the current repository files. It must not rely on previous conversations, remembered task state, or old local copies.
 
-## 2. Repository Structure
+## 2. Human Setup
+
+Follow [human_configuration.md](human_configuration.md) to configure GitHub access and connect the repository to ChatGPT. Initial setup is best completed in a desktop browser. The intended everyday interface for managing tasks is the ChatGPT mobile app.
+
+## 3. Repository Structure
 
 - `README.md`: project overview and getting-started guidance.
+- `human_configuration.md`: step-by-step human setup and connection guide.
 - `AGENTS.md`: operating instructions for AI assistants and contributors.
 - `tasks.md`: authoritative task and project ledger.
 - `docs/task_ledger_format.md`: ledger structure and record definitions.
 - `docs/assistant_workflow.md`: read, create, update, delete, and verification workflow.
 
-## 3. How It Works
+## 4. How It Works
 
 The `tasks.md` file contains three sections:
 
@@ -38,7 +43,7 @@ Each task has a stable ID. Projects also have stable IDs. Counters at the top of
 
 The ledger is intentionally simple: it is readable and editable in GitHub, a text editor, or an AI client with repository access.
 
-## 4. Task Management
+## 5. Task Management
 
 An AI assistant can help with common operations when the current client has the necessary repository permissions:
 
@@ -52,7 +57,7 @@ An AI assistant can help with common operations when the current client has the 
 
 The assistant must read the latest ledger before answering task-state questions or making changes. After a write, it must retrieve the updated file and verify the result.
 
-## 5. GitHub Permissions
+## 6. GitHub Permissions
 
 Repository capabilities vary by AI client, account connection, session, and repository permissions. A client may be able to read files without being able to write them.
 
@@ -60,7 +65,7 @@ Do not assume that an AI assistant can perform an operation. It should use the c
 
 For safer experimentation, users may choose to work through a dedicated branch and review changes before merging them.
 
-## 6. Privacy and Public Repositories
+## 7. Privacy and Public Repositories
 
 A task ledger can contain personal information. Consider the repository's visibility and the AI services that will process its contents before adding sensitive details.
 
@@ -68,7 +73,7 @@ If the repository is public, its contents may be visible to anyone. Do not store
 
 When an AI client reads task data, relevant content is processed by that AI provider. Review the provider's privacy terms and your organization's policies before connecting an account or repository.
 
-## 7. Documentation
+## 8. Documentation
 
 See the `docs/` directory for the ledger format and the assistant workflow.
 
