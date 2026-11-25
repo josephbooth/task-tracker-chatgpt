@@ -30,6 +30,7 @@ Follow [human_configuration.md](human_configuration.md) to configure GitHub acce
 - `tasks.md`: authoritative task and project ledger.
 - `docs/task_ledger_format.md`: ledger structure and record definitions.
 - `docs/assistant_workflow.md`: read, create, update, delete, and verification workflow.
+- `LICENSE`: MIT License.
 
 ## 4. How It Works
 
@@ -78,3 +79,7 @@ When an AI client reads task data, relevant content is processed by that AI prov
 See the `docs/` directory for the ledger format and the assistant workflow.
 
 This project provides a simple repository-based workflow. It does not provide a hosted application, automatic reminders, background scheduling, or guaranteed synchronization with other task systems.
+
+## 9. License
+
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for the complete license text.
