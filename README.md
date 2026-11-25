@@ -26,13 +26,17 @@ Follow [human_configuration.md](human_configuration.md) to configure GitHub acce
 
 ## 3. Repository Structure
 
-- `README.md`: project overview and getting-started guidance.
-- `human_configuration.md`: step-by-step human setup and connection guide.
-- `AGENTS.md`: operating instructions for AI assistants and contributors.
-- `tasks.md`: authoritative task and project ledger.
-- `docs/task_ledger_format.md`: ledger structure and record definitions.
-- `docs/assistant_workflow.md`: read, create, update, delete, and verification workflow.
-- `LICENSE`: MIT License.
+```text
+task-tracker-chatgpt/
+├── README.md
+├── human_configuration.md
+├── AGENTS.md
+├── tasks.md
+├── LICENSE
+└── docs/
+    ├── task_ledger_format.md
+    └── assistant_workflow.md
+```
 
 ## 4. How It Works
 
